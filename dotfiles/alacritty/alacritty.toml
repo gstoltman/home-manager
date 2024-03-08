@@ -9,10 +9,8 @@ duration = 200
 blink_interval = 750
 blink_timeout = 5
 unfocused_hollow = false
-
-[cursor.style]
-blinking = "On"
-shape = "Beam"
+style.blinking = "On"
+style.shape = "Underline"
 
 [env]
 TERM = "alacritty"
@@ -24,62 +22,42 @@ hide_when_typing = true
 history = 10000
 multiplier = 3
 
-#[shell]
-#program = "/bin/bash"
-
 [window]
 decorations = "none"
 dynamic_padding = true
 dynamic_title = true
 opacity = 0.8
-
-[window.padding]
-x = 5
-y = 5
+padding.x = 5
+padding.y = 5
 
 ### FONTS
 
 [font]
 size = 12
-
-#[font.bold]
-#family = "Iosevka"
-#style = "Bold"
-#
-#[font.bold_italic]
-#family = "Iosevka"
-#style = "BoldItalic"
-
-#[font.italic]
-#family = "Iosevka"
-#style = "Italic"
-
-#[font.normal]
-#family = "FiraCode"
-#style = "Regular"
+bold.family = "IosevkaNerdFont"
+bold_italic.family = "IosevkaNerdFont"
+italic.family = "IosevkaNerdFont"
+normal.family = "IosevkaNerdFont"
 
 ### THEMES
+[colors]
+bright.black = "#475258"
+bright.blue = "#7fbbb3"
+bright.cyan = "#83c092"
+bright.green = "#a7c080"
+bright.magenta = "#d699b6"
+bright.red = "#e67e80"
+bright.white = "#d3c6aa"
+bright.yellow = "#dbbc7f"
 
-[colors.bright]
-black = "#475258"
-blue = "#7fbbb3"
-cyan = "#83c092"
-green = "#a7c080"
-magenta = "#d699b6"
-red = "#e67e80"
-white = "#d3c6aa"
-yellow = "#dbbc7f"
+normal.black = "#d3c6aa"
+normal.blue = "#7fbbb3"
+normal.cyan = "#83c092"
+normal.green = "#083b15"
+normal.magenta = "#d699b6"
+normal.red = "#e67e80"
+normal.white = "#d3c6aa"
+normal.yellow = "#dbbc7f"
 
-[colors.normal]
-black = "#d3c6aa"
-blue = "#7fbbb3"
-cyan = "#83c092"
-green = "#083b15"
-magenta = "#d699b6"
-red = "#e67e80"
-white = "#d3c6aa"
-yellow = "#dbbc7f"
-
-[colors.primary]
-background = "#272e33"
-foreground = "#d3c6aa"
+primary.background = "#272e33"
+primary.foreground = "#d3c6aa"

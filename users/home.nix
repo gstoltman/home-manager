@@ -30,7 +30,7 @@
         xclip
 
 	### Fonts
-        ( nerdfonts.override { fonts = [ "FiraCode" "Iosevka"]; } )
+        ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
 
         ### Language Support
         #typst

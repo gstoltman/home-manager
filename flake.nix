@@ -20,7 +20,7 @@
                 grant = home-manager.lib.homeManagerConfiguration {
                     inherit pkgs;
                     modules = [ 
-                        ./users/void-home.nix 
+                        ./users/home.nix 
                         nix-index-database.hmModules.nix-index
                     ];
                 };
