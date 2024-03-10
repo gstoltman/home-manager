@@ -52,11 +52,11 @@
         #    source = ../dotfiles/tmux/tmux.conf;
         #    target = "./.tmux.conf";
         #};
-        #git = {
-        #    recursive = true;
-        #    source = ../dotfiles/git;
-        #    target = "./.config/git";
-        #};
+        git = {
+            recursive = true;
+            source = ../dotfiles/git;
+            target = "./.config/git";
+        };
         bash = {
             recursive = false;
             source = ../dotfiles/bash/bashrc;
