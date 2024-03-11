@@ -18,7 +18,7 @@
 
     home.packages = with pkgs; [
         alacritty
-	#bat
+	bat
 	btop
 	discord
 	firefox
