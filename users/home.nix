@@ -27,6 +27,7 @@
 	#jq
 	neofetch
 	neovim
+	obsidian
 	#ripgrep
 	starship
 	#tmux
