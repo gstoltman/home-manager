@@ -10,6 +10,10 @@
             enable = true;
             nix-direnv.enable = true;
         };
+	vscode = {
+	  enable = true;
+	  package = pkgs.vscodium;
+	};
     };
 
     home.packages = with pkgs; [
