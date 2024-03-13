@@ -1,10 +1,11 @@
-<div align="left">
+<div align="center">
   <a href="https://github.com/gstoltman/home-manager">
-    <img src="assets/nix-snowflake.svg" alt="Logo" width="80" height="80" align="center">
+    <img src="assets/nix-snowflake.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Home Manager with Nix</h1>
 
+<div align="left">
 ## Usage
 
 ### Installation
@@ -36,4 +37,5 @@ In practice, this means the nix channel I follow gets pinned and
 thus all packages I download and install are the same across
 all machines I use. To upgrade all system packages, I run the
 command ```nix flake update```, rebuild home manager, and then 
-commit my new lockfile.
+commit my new lockfile.i
+</div>
