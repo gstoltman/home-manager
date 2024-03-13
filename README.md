@@ -6,7 +6,9 @@
   <h1 align="center">Home Manager with Nix</h1>
 
 <div align="left">
+
 ### Installation
+
 Official installation instructions can be found in the [Home
 Manager community docs](https://nix-community.github.io/home-manager/) or the
 [NixOS Wiki](https://nixos.wiki/wiki/Home_Manager).
