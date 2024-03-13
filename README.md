@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/gstoltman/home-manager">
-    <img src="images/nix-snowflake.svg" alt="Logo" width="80" height="80">
+    <img src="assets/nix-snowflake.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Home Manager with Nix</h1>
