@@ -1,9 +1,9 @@
-<div align="center">
+<div align="left">
   <a href="https://github.com/gstoltman/home-manager">
     <img src="assets/nix-snowflake.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h1 align="left">Home Manager with Nix</h1>
+  <h1 align="center">Home Manager with Nix</h1>
 
 ## Usage
 
