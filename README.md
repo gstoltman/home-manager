@@ -6,8 +6,6 @@
   <h1 align="center">Home Manager with Nix</h1>
 </div>
 
-<div align="left">
-
 ### Installation
 
 Official installation instructions can be found in the [Home
@@ -38,6 +36,5 @@ In practice, this means the nix channel I follow gets pinned and
 thus all packages I download and install are the same across
 all machines I use. To upgrade all system packages, I run the
 command ```nix flake update```, rebuild home manager, and then 
-commit my new lockfile.i
+commit my new lockfile.
 
-</div>
