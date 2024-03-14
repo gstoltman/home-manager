@@ -29,7 +29,7 @@ To rebuild home manager, run the command `home-manager switch
 --flake /path/to/flake/#<flake_profile>` where `flake_profile` is
 whatever gets set in flake.nix.
 
-For me, example would be executing this from my home-manager folder:`'home-manager switch --flake .#grant`
+For me, example would be executing this from my home-manager folder:`'home-manager switch --flake .#gram`
 
 One advantage of home manager as a flake is pinned dependencies for reproducibility (flake.lock).
 In practice, this means the nix channel I follow gets pinned and
