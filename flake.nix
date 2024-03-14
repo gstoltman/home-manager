@@ -9,18 +9,29 @@
         };
         nix-index-database.url = "github:Mic92/nix-index-database";
         nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
+	nix-colors.url = "github:misterio77/nix-colors";
     };
 
-    outputs = { nixpkgs, home-manager, nix-index-database, ... }:
+    outputs = { nixpkgs, home-manager, nix-index-database, ... }@inputs:
         let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         in {
             homeConfigurations = {
-                grant = home-manager.lib.homeManagerConfiguration {
+	        void = home-manager.lib.homeManagerConfiguration {
                     inherit pkgs;
+		    extraSpecialArgs = { inherit inputs; };
                     modules = [ 
-                        ./users/home.nix 
+                        ./profiles/void.nix 
+                        nix-index-database.hmModules.nix-index
+                    ];
+                };
+
+                gram = home-manager.lib.homeManagerConfiguration {
+                    inherit pkgs;
+		    extraSpecialArgs = { inherit inputs; };
+                    modules = [ 
+                        ./profiles/gram.nix 
                         nix-index-database.hmModules.nix-index
                     ];
                 };

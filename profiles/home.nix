@@ -1,15 +1,25 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs , ... }:
 {
     home.username = "grant";
     home.homeDirectory = "/home/grant";
 
     nixpkgs.config.allowUnfreePredicate = _: true;
+
+    imports = [
+      inputs.nix-colors.homeManagerModules.default
+    ];
+
+    colorScheme = inputs.nix-colors.colorSchemes.everforest;
     
     programs = {
-        direnv = {
-            enable = true;
-            nix-direnv.enable = true;
-        };
+	#gtk = {
+	#  enable = true;
+	#};
+	#qt = {
+	#  enable = true;
+	#  platformTheme = "gtk";
+	#  style.name = "breeze";
+	#};
 	vscode = {
 	  enable = true;
 	  package = pkgs.vscodium;
@@ -17,7 +27,7 @@
     };
 
     home.packages = with pkgs; [
-        alacritty
+        #alacritty
 	bat
 	btop
 	discord
@@ -48,11 +58,11 @@
         #    source = ../dotfiles/nvim;
         #    target = "./.config/nvim";
         #};
-        alacritty = {
-            recursive = true;
-            source = ../dotfiles/alacritty;
-            target = "./.config/alacritty";
-        };
+        #alacritty = {
+        #    recursive = true;
+        #    source = ../dotfiles/alacritty;
+        #    target = "./.config/alacritty";
+        #};
         #tmux = {
         #    source = ../dotfiles/tmux/tmux.conf;
         #    target = "./.tmux.conf";
