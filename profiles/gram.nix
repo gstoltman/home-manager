@@ -8,37 +8,25 @@
     imports = [
       inputs.nix-colors.homeManagerModules.default
       ./features/alacritty.nix
+      ./features/bash.nix
+      ./features/git.nix
       ./features/starship.nix
       ./features/vscode.nix
     ];
 
     colorScheme = inputs.nix-colors.colorSchemes.everforest;
     
-    programs = {
-	#gtk = {
-	#  enable = true;
-	#};
-	#qt = {
-	#  enable = true;
-	#  platformTheme = "gtk";
-	#  style.name = "breeze";
-	#};
-    };
-
     home.packages = with pkgs; [
-        #alacritty
 	bat
 	btop
 	discord
 	firefox
 	#fzf
-	git
 	#jq
 	neofetch
 	neovim
 	obsidian
 	#ripgrep
-	starship
 	#tmux
 	unzip
         xclip
@@ -57,30 +45,10 @@
         #    source = ../dotfiles/nvim;
         #    target = "./.config/nvim";
         #};
-        #alacritty = {
-        #    recursive = true;
-        #    source = ../dotfiles/alacritty;
-        #    target = "./.config/alacritty";
-        #};
         #tmux = {
         #    source = ../dotfiles/tmux/tmux.conf;
         #    target = "./.tmux.conf";
         #};
-        git = {
-            recursive = true;
-            source = ../dotfiles/git;
-            target = "./.config/git";
-        };
-        bash = {
-            recursive = false;
-            source = ../dotfiles/bash/bashrc;
-            target = "./.bashrc";
-        };
-	#starship = {
-	#  recursive = false;
-	#  source = ../dotfiles/starship/starship.toml;
-	#  target = "./.config/starship.toml";
-	#};
     };
 
     home.sessionVariables = {

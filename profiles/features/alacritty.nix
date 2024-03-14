@@ -3,7 +3,9 @@
 {
   programs.alacritty.enable = true;
   programs.alacritty.settings = {
+    cursor.style.shape = "Underline";
     window = {
+      decorations = "none";
       opacity = 0.8;
     };
     colors = with config.colorScheme.palette; {
