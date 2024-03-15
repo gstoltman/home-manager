@@ -40,10 +40,10 @@
     };
     font = {
       size = 12;
-      bold.family = "FiraCode Nerd Font";
-      bold_italic.family = "FiraCode Nerd Font";
-      italic.family = "FiraCode Nerd Font";
-      normal.family = "FiraCode Nerd Font";
+      bold.family = "Iosevka Nerd Font Mono";
+      bold_italic.family = "Iosevka Nerd Font Mono";
+      italic.family = "Iosevka Nerd Font Mono";
+      normal.family = "Iosevka Nerd Font Mono";
     };
   };
 }
