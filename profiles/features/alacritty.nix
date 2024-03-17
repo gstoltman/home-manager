@@ -7,6 +7,8 @@
     window = {
       decorations = "none";
       opacity = 0.8;
+      padding.x = 10;
+      padding.y = 10;
     };
     colors = with config.colorScheme.palette; {
       bright = {
