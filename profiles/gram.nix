@@ -15,7 +15,7 @@
     ];
 
     colorScheme = inputs.nix-colors.colorSchemes.everforest;
-    
+
     home.packages = with pkgs; [
 	bat
 	btop
@@ -31,7 +31,7 @@
         xclip
 
 	### Fonts
-        ( nerdfonts.override { fonts = [ "Iosevka" "FiraCode" ]; } )
+        ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
 
         ### Language Support
         #typst
