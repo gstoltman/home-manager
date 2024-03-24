@@ -10,6 +10,8 @@
       ./features/alacritty.nix
       ./features/bash.nix
       ./features/git.nix
+      #./features/i3.nix
+      #./features/polybar.nix
       ./features/starship.nix
       ./features/vscode.nix
     ];
@@ -64,6 +66,9 @@
     home.sessionPath = [
         "$XDG_BIN_HOME"
     ];
+
+    # Restart services on switch
+    systemd.user.startServices = "sd-switch";
 
 # You should not change this value, even if you update Home Manager. If you do
 # want to update the value, then make sure to first check the Home Manager
