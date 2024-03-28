@@ -11,12 +11,13 @@
       ./features/bash.nix
       ./features/git.nix
       #./features/i3.nix
+      ./features/nvim/nvim.nix
       #./features/polybar.nix
       ./features/starship.nix
       ./features/vscode.nix
     ];
 
-    colorScheme = inputs.nix-colors.colorSchemes.everforest;
+    colorScheme = inputs.nix-colors.colorSchemes.tokyo-night-storm;
 
     home.packages = with pkgs; [
 	bat
@@ -25,7 +26,6 @@
 	firefox
 	fzf
 	neofetch
-	neovim
 	obsidian
 	ripgrep
 	#tmux
