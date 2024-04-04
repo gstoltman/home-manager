@@ -145,17 +145,17 @@ in {
         require('colorizer').setup{}
       '';
     }
-    {
-      plugin = fidget-nvim;
-      type = "lua";
-      config = /* lua */ ''
-        require('fidget').setup{
-          text = {
-            spinner = "dots",
-          },
-        }
-      '';
-    }
+    #{
+    #  plugin = fidget-nvim;
+    #  type = "lua";
+    #  config = /* lua */ ''
+    #    require('fidget').setup{
+    #      text = {
+    #        spinner = "dots",
+    #      },
+    #    }
+    #  '';
+    #}
     {
       plugin = oil-nvim;
       type = "lua";

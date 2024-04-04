@@ -12,7 +12,7 @@ Official installation instructions can be found in the [Home
 Manager community docs](https://nix-community.github.io/home-manager/) or the
 [NixOS Wiki](https://nixos.wiki/wiki/Home_Manager).
 
-I deploy my HM configuration as a flake which needs be enabled.
+I deploy my HM configuration as a flake which needs to be enabled.
 For standalone personal computers, I enable this via a nixos
 option `nix.settings.experimental-features = [ "nix-command" "flakes" ];`.
 If running Home Manager on top of another distro, I enable this
