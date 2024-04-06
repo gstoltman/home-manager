@@ -35,10 +35,6 @@
 
 	  ### Fonts
     ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
-
-    ### Language Support
-    #typst
-    #go
   ];
 
   home.file = {
