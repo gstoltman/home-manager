@@ -11,9 +11,9 @@
       ./features/alacritty.nix
       ./features/bash.nix
       ./features/git.nix
-      #./features/i3.nix
+      ./features/i3.nix
       ./features/nvim/nvim.nix
-      #./features/polybar.nix
+      ./features/polybar.nix
       ./features/starship.nix
       ./features/vscode.nix
   ];
