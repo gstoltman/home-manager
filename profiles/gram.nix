@@ -11,9 +11,9 @@
       ./features/alacritty.nix
       ./features/bash.nix
       ./features/git.nix
-      ./features/i3.nix
+#      ./features/i3.nix
       ./features/nvim/nvim.nix
-      ./features/polybar.nix
+#      ./features/polybar.nix
       ./features/starship.nix
       ./features/vscode.nix
   ];
@@ -29,11 +29,11 @@
 	  neofetch
 	  obsidian
 	  ripgrep
-	  #tmux
+    #tmux
 	  unzip
     xclip
 
-	  ### Fonts
+	  # Fonts
     ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
   ];
 
@@ -50,7 +50,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
-    XDG_BIN_HOME = "$HOME/.local/bin"; 	# Not technically in the official xdg specification
+    XDG_BIN_HOME = "$HOME/.local/bin";
     XDG_DESKTOP_DIR="$HOME/desktop";
     XDG_DOWNLOAD_DIR="$HOME/downloads";
   };
@@ -62,10 +62,7 @@
   # Restart services on switch
   systemd.user.startServices = "sd-switch";
 
-# You should not change this value, even if you update Home Manager. If you do
-# want to update the value, then make sure to first check the Home Manager
-# release notes.
-    home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # No need to change.
 
 # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
