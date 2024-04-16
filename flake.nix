@@ -13,28 +13,28 @@
     };
 
     outputs = { nixpkgs, home-manager, nix-index-database, ... }@inputs:
-        let
+      let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
-        in {
-            homeConfigurations = {
+      in {
+        homeConfigurations = {
 	        void = home-manager.lib.homeManagerConfiguration {
-                    inherit pkgs;
-		    extraSpecialArgs = { inherit inputs; };
-                    modules = [ 
-                        ./profiles/void.nix 
-                        nix-index-database.hmModules.nix-index
-                    ];
-                };
+            inherit pkgs;
+		        extraSpecialArgs = { inherit inputs; };
+            modules = [ 
+              ./profiles/void.nix 
+              nix-index-database.hmModules.nix-index
+            ];
+          };
 
-                gram = home-manager.lib.homeManagerConfiguration {
-                    inherit pkgs;
-		    extraSpecialArgs = { inherit inputs; };
-                    modules = [ 
-                        ./profiles/gram.nix 
-                        nix-index-database.hmModules.nix-index
-                    ];
-                };
-            };
+          gram = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+		        extraSpecialArgs = { inherit inputs; };
+            modules = [ 
+              ./profiles/gram.nix 
+              nix-index-database.hmModules.nix-index
+            ];
+          };
         };
+      };
 }
