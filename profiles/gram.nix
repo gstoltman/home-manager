@@ -10,7 +10,7 @@
     inputs.nix-colors.homeManagerModules.default
       ./features/alacritty.nix
       ./features/bash.nix
-      ./features/eww.nix
+#      ./features/eww.nix
       ./features/git.nix
 #      ./features/hyprland.nix
       ./features/i3.nix
