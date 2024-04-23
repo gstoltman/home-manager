@@ -16,6 +16,7 @@ in {
         window = {
           border = 0;
           hideEdgeBorders = "both";
+#          decorations = "none";
         };
 
         gaps = {
@@ -27,13 +28,16 @@ in {
 
         keybindings = {
         # logout
-        "${modifier}+Shift+e" = "exec i3-msg exit";
+        "${modifier}+Shift+l" = "exec i3-msg exit";
           
         # Alacritty terminal
         "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
 
 	      # Firefox
 	      "${modifier}+f" = "exec ${pkgs.firefox}/bin/firefox";
+
+	      # Obsidian
+	      "${modifier}+o" = "exec ${pkgs.obsidian}/bin/obsidian";
 
         # Rofi
         #"${modifier}+d" = "exec ${pkgs.rofi}/bin/rofi -show drun";
@@ -43,10 +47,10 @@ in {
         #"${modifier}+shift+a" = "exec ${pkgs.flameshot}/bin/flameshot gui";
 
         # Movement
-        "${modifier}+j" = "focus down";
-        "${modifier}+k" = "focus up";
-        "${modifier}+h" = "focus left";
-        "${modifier}+l" = "focus right";
+#        "${modifier}+j" = "focus down";
+#        "${modifier}+k" = "focus up";
+#        "${modifier}+h" = "focus left";
+#        "${modifier}+l" = "focus right";
 
         # Workspaces
 	      "${modifier}+1" = "workspace 1";
@@ -62,34 +66,21 @@ in {
         "${modifier}+z" = "split h";
         "${modifier}+x" = "split v";
         "${modifier}+r" = "mode resize";
-      };
 
-      modes.resize = {
-        "h" = "resize grow width 10 px or 10 ppt";
-        "j" = "resize shrink height 10 px or 10 ppt";
-       "k" = "resize grow height 10 px or 10 ppt";
-        "l" = "resize shrink width 10 px or 10 ppt";
-       "Escape" = "mode default";
+        "${modifier}+h" = "resize grow width 10 px or 10 ppt";
+        "${modifier}+l" = "resize shrink width 10 px or 10 ppt";
+        "${modifier}+j" = "resize grow height 10 px or 10 ppt";
+        "${modifier}+k" = "resize shrink height 10 px or 10 ppt";
       };
 
       startup = [
         {
-          command = "${pkgs.xmousepasteblock}/bin/xmousepasteblock";
+          command = "${pkgs.feh}/bin/feh --bg-fill ~/.background.webp";
           always = true;
           notification = false;
         }
-        #{
-        #  command = "${pkgs.feh}/bin/feh --bg-fill ~/.background.webp";
-        #  always = true;
-        #  notification = false;
-        #}
         {
           command = "systemctl --user restart polybar.service";
-          always = true;
-          notification = false;
-        }
-        {
-          command = "${pkgs.xbanish}/bin/xbanish";
           always = true;
           notification = false;
         }
