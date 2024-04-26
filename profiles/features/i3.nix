@@ -15,12 +15,12 @@ in {
 
         window = {
           border = 0;
+          titlebar = false;
           hideEdgeBorders = "both";
-#          decorations = "none";
         };
 
         gaps = {
-          inner = 8;
+          inner = 5;
           outer = 5;
         };
 
