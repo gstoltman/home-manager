@@ -6,8 +6,7 @@
     settings = {
       "$mod" = "SUPER";
       bind = [
-        "$mod, C, exec, alacritty"
-        "$mod, ENTER, exec, alacritty" #this doesn't work, not sure why
+        "$mod, RETURN, exec, alacritty"
         "$mod, F, exec, firefox"
         "$mod, Q, killactive"
       ]
