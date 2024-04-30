@@ -10,12 +10,8 @@
     inputs.nix-colors.homeManagerModules.default
       ./features/alacritty.nix
       ./features/bash.nix
-#      ./features/eww.nix
       ./features/git.nix
-#      ./features/hyprland.nix
-      ./features/i3.nix
       ./features/nvim/nvim.nix
-#      ./features/polybar.nix
       ./features/starship.nix
       ./features/vscode.nix
   ];

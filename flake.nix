@@ -18,20 +18,20 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in {
         homeConfigurations = {
-	        void = home-manager.lib.homeManagerConfiguration {
+	        home = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
-              ./profiles/void.nix 
+              ./profiles/home.nix 
               nix-index-database.hmModules.nix-index
             ];
           };
 
-          gram = home-manager.lib.homeManagerConfiguration {
+          homewm = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
-              ./profiles/gram.nix 
+              ./profiles/homewm.nix 
               nix-index-database.hmModules.nix-index
             ];
           };
