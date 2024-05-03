@@ -24,6 +24,7 @@
 	  discord
     feh
 	  firefox
+    flameshot
 	  fzf
 	  neofetch
 	  obsidian
