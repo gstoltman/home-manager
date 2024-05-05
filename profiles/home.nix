@@ -35,6 +35,7 @@
 
 	  # Fonts
     ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
+
   ];
 
   home.file = {
