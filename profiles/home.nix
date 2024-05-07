@@ -11,6 +11,8 @@
       ./features/alacritty.nix
       ./features/bash.nix
       ./features/git.nix
+      ./features/gtk.nix
+      ./features/kitty.nix
       ./features/nvim/nvim.nix
       ./features/starship.nix
       ./features/vscode.nix
@@ -32,10 +34,6 @@
     #tmux
 	  unzip
     xclip
-
-	  # Fonts
-    ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
-
   ];
 
   home.file = {

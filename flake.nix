@@ -27,11 +27,11 @@
             ];
           };
 
-          homewm = home-manager.lib.homeManagerConfiguration {
+          wmhome = home-manager.lib.homeManagerConfiguration {
             inherit pkgs;
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
-              ./profiles/homewm.nix 
+              ./profiles/wmhome.nix 
               nix-index-database.hmModules.nix-index
             ];
           };

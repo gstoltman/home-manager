@@ -42,10 +42,10 @@
     };
     font = {
       size = 12;
-      bold.family = "Iosevka Nerd Font Mono";
-      bold_italic.family = "Iosevka Nerd Font Mono";
-      italic.family = "Iosevka Nerd Font Mono";
-      normal.family = "Iosevka Nerd Font Mono";
+      bold.family = "ZedMono Nerd Font";
+      bold_italic.family = "ZedMono Nerd Font";
+      italic.family = "ZedMono Nerd Font";
+      normal.family = "ZedMono Nerd Font";
     };
   };
 }
