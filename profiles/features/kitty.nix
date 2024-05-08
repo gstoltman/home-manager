@@ -5,7 +5,7 @@
 
     font = {
       name = "ZedMono Nerd Font";
-      size = 16;
+      size = 14;
     };
 
     settings = {
