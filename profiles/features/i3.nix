@@ -24,14 +24,12 @@ in {
           outer = 5;
         };
 
-	      fonts = ["Iosevka Nerd Font Mono"];
-
         keybindings = {
         # logout
         "${modifier}+Shift+l" = "exec i3-msg exit";
           
         # Alacritty terminal
-        "${modifier}+Return" = "exec ${pkgs.alacritty}/bin/alacritty";
+        "${modifier}+Return" = "exec ${pkgs.kitty}/bin/kitty";
 
 	      # Firefox
 	      "${modifier}+f" = "exec ${pkgs.firefox}/bin/firefox";
@@ -74,18 +72,13 @@ in {
       };
 
       startup = [
+#        {
+#          command = "systemctl --user restart polybar.service";
+#          always = true;
+#          notification = false;
+#        }
         {
-          command = "${pkgs.feh}/bin/feh --bg-fill ~/.background.webp";
-          always = true;
-          notification = false;
-        }
-        {
-          command = "systemctl --user restart polybar.service";
-          always = true;
-          notification = false;
-        }
-        {
-          command = "${pkgs.alacritty}/bin/alacritty";
+          command = "${pkgs.kitty}/bin/kitty";
           always = false;
           notification = false;
         }
@@ -93,5 +86,4 @@ in {
       };
     };
   };
-  home.file.".background.webp".source = ../../assets/everforest-wallpaper.jpg;
 }

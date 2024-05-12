@@ -7,20 +7,19 @@
   nixpkgs.config.allowUnfreePredicate = _: true;
 
   imports = [
-    inputs.nix-colors.homeManagerModules.default
-      ./features/alacritty.nix
       ./features/bash.nix
-#      ./features/eww.nix
+      ./features/eww/eww.nix
       ./features/git.nix
-      ./features/hyprland.nix
-#      ./features/i3.nix
+      ./features/i3.nix
+      ./features/kitty.nix
       ./features/nvim/nvim.nix
 #      ./features/polybar.nix
       ./features/starship.nix
+      ./features/stylix.nix
       ./features/vscode.nix
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.everforest;
+#  colorScheme = inputs.nix-colors.colorSchemes.everforest;
 
   home.packages = with pkgs; [
 	  bat
@@ -35,9 +34,6 @@
     #tmux
 	  unzip
     xclip
-
-	  # Fonts
-    ( nerdfonts.override { fonts = [ "Iosevka" ]; } )
   ];
 
   home.file = {

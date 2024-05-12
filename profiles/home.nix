@@ -7,18 +7,14 @@
   nixpkgs.config.allowUnfreePredicate = _: true;
 
   imports = [
-    inputs.nix-colors.homeManagerModules.default
-      ./features/alacritty.nix
       ./features/bash.nix
       ./features/git.nix
-      ./features/gtk.nix
       ./features/kitty.nix
       ./features/nvim/nvim.nix
       ./features/starship.nix
+      ./features/stylix.nix
       ./features/vscode.nix
   ];
-
-  colorScheme = inputs.nix-colors.colorSchemes.everforest;
 
   home.packages = with pkgs; [
 	  bat

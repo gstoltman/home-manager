@@ -7,12 +7,10 @@
         url = "github:nix-community/home-manager";
         inputs.nixpkgs.follows = "nixpkgs";
       };
-      nix-index-database.url = "github:Mic92/nix-index-database";
-      nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
-      nix-colors.url = "github:misterio77/nix-colors";
+      stylix.url = "github:danth/stylix";
     };
 
-    outputs = { nixpkgs, home-manager, nix-index-database, ... }@inputs:
+    outputs = { nixpkgs, home-manager, stylix, ... }@inputs:
       let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
@@ -22,8 +20,8 @@
             inherit pkgs;
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
-              ./profiles/home.nix 
-              nix-index-database.hmModules.nix-index
+              ./profiles/home.nix
+              stylix.homeManagerModules.stylix
             ];
           };
 
@@ -31,8 +29,8 @@
             inherit pkgs;
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
-              ./profiles/wmhome.nix 
-              nix-index-database.hmModules.nix-index
+              ./profiles/wmhome.nix
+              stylix.homeManagerModules.stylix
             ];
           };
         };
