@@ -3,7 +3,10 @@
 {
   programs.git = {
     enable = true;
-    userName = "Grant Stoltman";
-    userEmail = "gstoltman@gmail.com";
+  };
+
+  home.file.".gitconfig" = {
+    source = ./dotfiles/git/gitconfig;
+    target = "./.gitconfig";
   };
 }
