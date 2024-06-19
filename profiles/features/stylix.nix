@@ -2,6 +2,7 @@
 
 {
   stylix = {
+    enable = true;
     #wallpaper = config.lib.stylix.types.wallpaper.from.image {
     #  file = ../../assets/everforest-wallpaper.jpg;
     #  polarity = "dark";
