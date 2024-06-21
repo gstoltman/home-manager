@@ -24,12 +24,12 @@
 	  firefox
     flameshot
 	  fzf
+    krita
 	  neofetch
 	  obsidian
 	  ripgrep
     #tmux
 	  unzip
-    xclip
   ];
 
   home.file = {
