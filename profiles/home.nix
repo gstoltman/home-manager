@@ -10,9 +10,10 @@
       ./features/bash.nix
       ./features/git.nix
       ./features/kitty.nix
-      ./features/nvim/nvim.nix
+      ./features/nixvim
       ./features/starship.nix
       ./features/stylix.nix
+      ./features/tmux.nix
       ./features/vscode.nix
   ];
 
@@ -28,7 +29,6 @@
 	  neofetch
 	  obsidian
 	  ripgrep
-    #tmux
 	  unzip
   ];
 
