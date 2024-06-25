@@ -18,26 +18,19 @@
   ];
 
   home.packages = with pkgs; [
-	  bat
-	  btop
-	  discord
+    bat
+	btop
+	discord
     feh
-	  firefox
+	firefox
     flameshot
-	  fzf
+	fzf
     krita
-	  neofetch
-	  obsidian
-	  ripgrep
-	  unzip
+	neofetch
+	obsidian
+	ripgrep
+	unzip
   ];
-
-  home.file = {
-    #tmux = {
-    #  source = ../dotfiles/tmux/tmux.conf;
-    #  target = "./.tmux.conf";
-    #};
-  };
 
   home.sessionVariables = {
     EDITOR = "nvim";
