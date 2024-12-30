@@ -7,8 +7,8 @@
     polarity = "dark";
     base16Scheme = ../../assets/themes/everforest.yaml;
     fonts = {
-      monospace = {
-        package = with pkgs; (nerdfonts.override { fonts = [ "ZedMono" ]; });
+      monospace ={
+        package = pkgs.nerd-fonts.zed-mono;
         name = "ZedMono Nerd Font";
       };
       sizes = {
