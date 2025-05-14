@@ -5,7 +5,7 @@
     vscode = {
       enable = true;
       package = pkgs.vscodium;
-      userSettings = {
+      profiles.default.userSettings = {
         editor.fontSize = 20;
       };
     };

@@ -2,10 +2,7 @@
 
 {
   imports = [
-    ./bufferline.nix
     ./options.nix
-    ./telescope.nix
-    ./treesitter.nix
   ];
 
   programs.nixvim = {
