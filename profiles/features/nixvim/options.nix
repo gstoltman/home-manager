@@ -2,7 +2,7 @@
   programs.nixvim = {
     clipboard = {
       register = "unnamedplus";
-      providers.xclip.enable = true;
+      providers.wl-clipboard.enable = true;
     };
 
     opts = {
