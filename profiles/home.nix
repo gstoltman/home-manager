@@ -9,24 +9,24 @@
   imports = [
       ./features/bash.nix
       ./features/git.nix
+      ./features/ghostty.nix
       ./features/kitty.nix
       ./features/nixvim
       ./features/starship.nix
       ./features/stylix.nix
-      ./features/tmux.nix
+      ./features/sway.nix
       ./features/vscode.nix
   ];
 
   home.packages = with pkgs; [
     bat
 	btop
-	discord
     feh
 	firefox
     flameshot
 	fzf
     krita
-	neofetch
+	fastfetch
 	obsidian
 	ripgrep
 	unzip
