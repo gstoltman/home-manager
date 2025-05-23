@@ -12,11 +12,13 @@
       ./features/ghostty.nix
       ./features/kitty.nix
       ./features/nixvim
+      ./features/pavucontrol.nix
       ./features/starship.nix
       ./features/stylix.nix
       ./features/sway.nix
       ./features/vscode.nix
       ./features/waybar.nix
+      ./features/wofi.nix
   ];
 
   home.packages = with pkgs; [

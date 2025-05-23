@@ -13,6 +13,16 @@ in {
         { command = "waybar"; }
       ];
 
+      output = {
+        "DP-1" = {
+          mode = "3440x1440@144Hz";
+        };
+        # Fix once on laptop
+        #"eDP-1" = {
+        #  mode = "1920x1080@60Hz";
+        #};
+      };
+
       window = {
         border = 0;
         titlebar = false;
@@ -26,12 +36,21 @@ in {
         # Browser
         "${modifier}+f" = "exec ${pkgs.firefox}/bin/firefox";
 
+        # Menu
+        "${modifier}+w" = "exec ${pkgs.wofi}/bin/wofi --show run";
+
         # Workspaces
         "${modifier}+1" = "workspace 1";
         "${modifier}+2" = "workspace 2";
         "${modifier}+3" = "workspace 3";
         "${modifier}+4" = "workspace 4";
         "${modifier}+5" = "workspace 5";
+
+        "${modifier}+shift+1" = "move container to workspace number 1";
+        "${modifier}+shift+2" = "move container to workspace number 2";
+        "${modifier}+shift+3" = "move container to workspace number 3";
+        "${modifier}+shift+4" = "move container to workspace number 4";
+        "${modifier}+shift+5" = "move container to workspace number 5";
 
         # Misc
         "${modifier}+q" = "kill";
