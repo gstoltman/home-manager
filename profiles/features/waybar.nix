@@ -1,6 +1,6 @@
 { pkgs, config, ... }: 
 {
-  programs.ghostty = {
+  programs.waybar = {
     enable = true;
   };
 }

@@ -16,6 +16,7 @@
       ./features/stylix.nix
       ./features/sway.nix
       ./features/vscode.nix
+      ./features/waybar.nix
   ];
 
   home.packages = with pkgs; [
