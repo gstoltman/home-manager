@@ -56,13 +56,14 @@ in {
 
         # Misc
         "${modifier}+q" = "kill";
+        "${modifier}+l" = "exec swaylock -f -c 000000";
         "${modifier}+shift+f" = "fullscreen toggle";
         "${modifier}+z" = "split h";
         "${modifier}+x" = "split v";
         "${modifier}+r" = "mode resize";
 
         "${modifier}+h" = "resize grow width 10 px or 10 ppt";
-        "${modifier}+l" = "resize shrink width 10 px or 10 ppt";
+        #"${modifier}+l" = "resize shrink width 10 px or 10 ppt";
         "${modifier}+j" = "resize grow height 10 px or 10 ppt";
         "${modifier}+k" = "resize shrink height 10 px or 10 ppt";
       };

@@ -7,10 +7,12 @@
         layer = "top";
         position = "left";
         modules-left = [ "sway/workspaces" ];
-        modules-center = [ "backlight" "pulseaudio" "tray" "sway-mode" ];
+        modules-center = [ "backlight" "pulseaudio" ];
         modules-right = [ "battery" "clock" ];
-        backlight = {
-          format = "L {}";
+        pulseaudio = {
+          format = "{volume}% 🔊";
+          scroll-step = 5;
+          on-click = "pavucontrol";
         };
       };
     };

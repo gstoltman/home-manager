@@ -31,7 +31,10 @@
     vlc
   ];
 
-  programs.home-manager.enable = true;
+  programs = {
+    home-manager.enable = true;
+    swaylock.enable = true;
+  };
 
   home.sessionVariables = {
     EDITOR = "nvim";
