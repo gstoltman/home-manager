@@ -8,11 +8,10 @@
 
   imports = [
       ./features/bash.nix
+      ./features/firefox.nix
       ./features/git.nix
       ./features/ghostty.nix
-      ./features/kitty.nix
       ./features/nixvim
-      ./features/pavucontrol.nix
       ./features/starship.nix
       ./features/stylix.nix
       ./features/sway.nix
@@ -24,16 +23,15 @@
   home.packages = with pkgs; [
     bat
 	btop
-    feh
-	firefox
+    fastfetch
     flameshot
-	fzf
     krita
-	fastfetch
 	obsidian
-	ripgrep
-	unzip
+    pavucontrol
+    vlc
   ];
+
+  programs.home-manager.enable = true;
 
   home.sessionVariables = {
     EDITOR = "nvim";
@@ -54,7 +52,4 @@
   systemd.user.startServices = "sd-switch";
 
   home.stateVersion = "24.05"; # No need to change.
-
-# Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
 }

@@ -26,7 +26,7 @@
             modules = [ 
               ./profiles/home.nix
               nixvim.homeManagerModules.nixvim
-              stylix.homeManagerModules.stylix
+              stylix.homeModules.stylix
             ];
           };
 
@@ -35,7 +35,7 @@
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
               ./profiles/wmhome.nix
-              stylix.homeManagerModules.stylix
+              stylix.homeModules.stylix
             ];
           };
         };
