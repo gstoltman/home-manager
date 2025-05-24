@@ -17,10 +17,9 @@ in {
         "DP-1" = {
           mode = "3440x1440@144Hz";
         };
-        # Fix once on laptop
-        #"eDP-1" = {
-        #  mode = "1920x1080@60Hz";
-        #};
+        "eDP-1" = {
+          mode = "1920x1200@60Hz";
+        };
       };
 
       window = {
@@ -38,6 +37,9 @@ in {
 
         # Menu
         "${modifier}+w" = "exec ${pkgs.wofi}/bin/wofi --show run";
+
+        # Bar Toggle
+        "${modifier}+Tab" = "exec swaymsg bar mode toggle";
 
         # Workspaces
         "${modifier}+1" = "workspace 1";

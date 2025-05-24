@@ -7,8 +7,11 @@
         layer = "top";
         position = "left";
         modules-left = [ "sway/workspaces" ];
-        modules-center = [];
-        modules-right = [ "clock" ];
+        modules-center = [ "backlight" "pulseaudio" "tray" "sway-mode" ];
+        modules-right = [ "battery" "clock" ];
+        backlight = {
+          format = "L {}";
+        };
       };
     };
     style = ''
