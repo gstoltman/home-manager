@@ -33,7 +33,6 @@
 
   programs = {
     home-manager.enable = true;
-    swaylock.enable = true;
   };
 
   home.sessionVariables = {

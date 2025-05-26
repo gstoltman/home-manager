@@ -9,9 +9,8 @@ in {
     config = {
       inherit modifier;
 
-      bars = [
-        { command = "waybar"; }
-      ];
+      # Prevents defaulting to swaybar
+      bars = [ ];
 
       output = {
         "DP-1" = {
@@ -39,7 +38,7 @@ in {
         "${modifier}+w" = "exec ${pkgs.wofi}/bin/wofi --show run";
 
         # Bar Toggle
-        "${modifier}+Tab" = "exec swaymsg bar mode toggle";
+        "${modifier}+Tab" = "exec ~/.config/sway/toggle-waybar.sh";
 
         # Workspaces
         "${modifier}+1" = "workspace 1";
@@ -56,14 +55,13 @@ in {
 
         # Misc
         "${modifier}+q" = "kill";
-        "${modifier}+l" = "exec swaylock -f -c 000000";
         "${modifier}+shift+f" = "fullscreen toggle";
         "${modifier}+z" = "split h";
         "${modifier}+x" = "split v";
         "${modifier}+r" = "mode resize";
 
         "${modifier}+h" = "resize grow width 10 px or 10 ppt";
-        #"${modifier}+l" = "resize shrink width 10 px or 10 ppt";
+        "${modifier}+l" = "resize shrink width 10 px or 10 ppt";
         "${modifier}+j" = "resize grow height 10 px or 10 ppt";
         "${modifier}+k" = "resize shrink height 10 px or 10 ppt";
       };

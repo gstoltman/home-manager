@@ -1,10 +1,6 @@
 {config, lib, pkgs, stylix, ...}:
 
 {
-  #home.packages = with pkgs; [
-  #  nerd-fonts.zed-mono
-  #];
-
   stylix = {
     enable = true;
     image = ../../assets/everforest-wallpaper.jpg;
@@ -19,13 +15,13 @@
       #  package = pkgs.nerd-fonts.zed-mono;
       #  name = "ZedMono Nerd Font Mono";
       #};
-      emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
-      };
       monospace = {
         package = pkgs.nerd-fonts.zed-mono;
         name = "ZedMono Nerd Font Mono";
+      };
+      emoji = {
+        package = pkgs.noto-fonts-emoji;
+        name = "Noto Color Emoji";
       };
       sizes = {
         desktop = 12;
