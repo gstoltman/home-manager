@@ -28,18 +28,22 @@
         layer = "top";
         position = "left";
         modules-left = [ "sway/workspaces" ];
-        modules-center = [ "backlight" "pulseaudio" ];
+        modules-center = [ "backlight" "pulseaudio" "bluetooth" ];
         modules-right = [ "battery" "clock" ];
         pulseaudio = {
-          format = "{volume}% 🔊";
+          format = "♪ {volume}%";
           scroll-step = 5;
           on-click = "pavucontrol";
+        };
+        bluetooth = {
+          format-connected = " {num_connections}";
+          on-click = "blueman-manager";
         };
       };
     };
     style = ''
       window#waybar {
-        min-width: 48px;
+        min-width: 1120px;
       }
     '';
   };

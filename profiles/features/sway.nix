@@ -26,7 +26,11 @@ in {
         titlebar = false;
         hideEdgeBorders = "both";
       };
-
+      
+      gaps = {
+        inner = 10;
+        outer = 10;
+      };
       keybindings = {
         # Terminal
         "${modifier}+Return" = "exec ${pkgs.ghostty}/bin/ghostty";

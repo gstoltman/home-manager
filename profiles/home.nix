@@ -22,6 +22,7 @@
 
   home.packages = with pkgs; [
     bat
+    blueman
 	btop
     fastfetch
     flameshot
