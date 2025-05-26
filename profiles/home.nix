@@ -29,8 +29,10 @@
 	obsidian
     pavucontrol
     vlc
+    # Fonts
+    nerd-fonts.fira-code
   ];
-
+  
   programs = {
     home-manager.enable = true;
   };
