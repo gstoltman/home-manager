@@ -35,7 +35,10 @@
   ];
   
   programs = {
+    eza.enable = true;
+    fzf.enable = true;
     home-manager.enable = true;
+    zoxide.enable = true;
   };
 
   home.sessionVariables = {

@@ -15,12 +15,7 @@ Manager community docs](https://nix-community.github.io/home-manager/) or the
 I deploy my HM configuration as a flake which needs to be enabled.
 For standalone personal computers, I enable this via a nixos
 option `nix.settings.experimental-features = [ "nix-command" "flakes" ];`.
-If running Home Manager on top of another distro, I enable this
-via a nix config file:
-```
-# ~/.config/nix/nix.conf
-experimental-features = nix-command flakes 
-```
+
 [Nix Flakes documentation](https://nixos.wiki/wiki/Flakes) if
 needed.
 
