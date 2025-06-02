@@ -68,6 +68,8 @@ in {
         "${modifier}+l" = "resize shrink width 10 px or 10 ppt";
         "${modifier}+j" = "resize grow height 10 px or 10 ppt";
         "${modifier}+k" = "resize shrink height 10 px or 10 ppt";
+
+        "${modifier}+shift+l" = "exec swaymsg exit";
       };
     };
   };
