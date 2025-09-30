@@ -29,15 +29,6 @@
               stylix.homeModules.stylix
             ];
           };
-
-          wmhome = home-manager.lib.homeManagerConfiguration {
-            inherit pkgs;
-		        extraSpecialArgs = { inherit inputs; };
-            modules = [ 
-              ./profiles/wmhome.nix
-              stylix.homeModules.stylix
-            ];
-          };
         };
       };
 }

@@ -28,6 +28,7 @@
     flameshot
     krita
 	obsidian
+    networkmanagerapplet
     pavucontrol
     vlc
     # Fonts
