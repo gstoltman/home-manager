@@ -28,8 +28,8 @@ in {
       };
       
       gaps = {
-        inner = 8;
-        outer = 8;
+        inner = 4;
+        outer = 4;
       };
       keybindings = {
         # Terminal
