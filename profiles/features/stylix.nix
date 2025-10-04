@@ -31,9 +31,6 @@
       };
     };
 
-
-    targets.firefox.profileNames = [ "vpkfk14y.default" ];
-
     opacity = {
       terminal = 0.80;
     };
