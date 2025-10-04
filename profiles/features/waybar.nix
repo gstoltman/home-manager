@@ -26,24 +26,47 @@
     settings = {
       primary = {
         layer = "top";
-        position = "left";
-        modules-left = [ "sway/workspaces" ];
-        modules-center = [ "backlight" "pulseaudio" "bluetooth" ];
-        modules-right = [ "battery" "clock" ];
+        position = "top";
+        modules-left = [ "custom/spacer" "custom/icon" "custom/spacer" "sway/workspaces" ];
+        modules-center = [ "backlight" "custom/divider" "pulseaudio" "custom/divider" "bluetooth" ];
+        modules-right = [ "network" "custom/divider" "battery" "custom/divider" "clock" ];
+        "custom/icon" = {
+          format = "";
+          on-click = "wofi --show drun";
+        };
+        "custom/divider" = {
+          format = " | ";
+        };
+        "custom/spacer" = {
+          format = "   ";
+        };
+        backlight = {
+          format = " {percent}%";
+        };
         pulseaudio = {
           format = "♪ {volume}%";
           scroll-step = 5;
           on-click = "pavucontrol";
         };
         bluetooth = {
-          format-connected = " {num_connections}";
+          format = "";
           on-click = "blueman-manager";
+        };
+        network = {
+          format = "";
+          on-click = "nm-connection-editor";
+        };
+        battery = {
+          format = "󰂄 {capacity}%";
+        };
+        clock = {
+          format = " {:%H:%M}";
         };
       };
     };
     style = ''
-      window#waybar {
-        min-width: 1120px;
+      #custom-icon {
+        font-size: 80px;
       }
     '';
   };

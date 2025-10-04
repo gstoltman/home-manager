@@ -21,14 +21,16 @@
   ];
 
   home.packages = with pkgs; [
+    aseprite
     bat
     blueman
 	btop
     fastfetch
     flameshot
+    godot
     krita
-	obsidian
     networkmanagerapplet
+	obsidian
     pavucontrol
     vlc
     # Fonts

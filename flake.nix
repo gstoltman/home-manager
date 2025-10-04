@@ -12,15 +12,9 @@
         url = "github:nix-community/nixvim";
         inputs.nixpkgs.follows = "nixpkgs";
       };
-      nixpkgs.url = "nixpkgs/nixos-unstable";
-      quickshell = {
-      # add ?ref=<tag> to track a tag
-        url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-        inputs.nixpkgs.follows = "nixpkgs";
-      };
     };
 
-    outputs = { nixpkgs, home-manager, nixvim, stylix, quickshell, ... }@inputs:
+    outputs = { nixpkgs, home-manager, nixvim, stylix, ... }@inputs:
       let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
@@ -33,7 +27,6 @@
               ./profiles/home.nix
               nixvim.homeManagerModules.nixvim
               stylix.homeModules.stylix
-              # Might need to address quickshell
             ];
           };
         };
