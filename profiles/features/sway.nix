@@ -15,6 +15,11 @@ in {
       output = {
         "DP-1" = {
           mode = "3440x1440@144Hz";
+          position = "1920 0";
+        };
+        "HDMI-A-1" = {
+          mode = "1920x1080@60Hz";
+          position = "0 0";
         };
         "eDP-1" = {
           mode = "1920x1200@60Hz";
@@ -57,6 +62,10 @@ in {
         "${modifier}+shift+4" = "move container to workspace number 4";
         "${modifier}+shift+5" = "move container to workspace number 5";
 
+        # Monitors
+        "${modifier}+shift+h" = "move container to output HDMI-A-1";
+        "${modifier}+shift+l" = "move container to output DP-1";
+
         # Misc
         "${modifier}+q" = "kill";
         "${modifier}+shift+f" = "fullscreen toggle";
@@ -68,8 +77,6 @@ in {
         "${modifier}+l" = "resize shrink width 10 px or 10 ppt";
         "${modifier}+j" = "resize grow height 10 px or 10 ppt";
         "${modifier}+k" = "resize shrink height 10 px or 10 ppt";
-
-        "${modifier}+shift+l" = "exec swaymsg exit";
       };
     };
   };

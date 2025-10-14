@@ -21,7 +21,7 @@
   ];
 
   home.packages = with pkgs; [
-    aseprite
+    #aseprite - currently broken
     bat
     blueman
 	btop
@@ -31,6 +31,7 @@
     krita
     networkmanagerapplet
 	obsidian
+    path-of-building
     pavucontrol
     vlc
     # Fonts
