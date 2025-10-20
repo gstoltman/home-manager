@@ -12,15 +12,23 @@ in {
       # Prevents defaulting to swaybar
       bars = [ ];
 
+      input = {
+        "type:touchpad" = {
+          tap = "enabled";
+          natural_scroll = "enabled";
+        };
+      };
+
       output = {
         "DP-1" = {
           mode = "3440x1440@144Hz";
-          position = "1920 0";
-        };
-        "HDMI-A-1" = {
-          mode = "1920x1080@60Hz";
           position = "0 0";
         };
+        # WIP below
+        #"HDMI-A-1" = {
+        #  mode = "1920x1080@60Hz";
+        #  position = "0 0";
+        #};
         "eDP-1" = {
           mode = "1920x1200@60Hz";
         };
@@ -33,9 +41,10 @@ in {
       };
       
       gaps = {
-        inner = 4;
-        outer = 4;
+        inner = 0;
+        outer = 0;
       };
+
       keybindings = {
         # Terminal
         "${modifier}+Return" = "exec ${pkgs.ghostty}/bin/ghostty";

@@ -21,7 +21,7 @@
   ];
 
   home.packages = with pkgs; [
-    #aseprite - currently broken
+    aseprite
     bat
     blueman
 	btop
