@@ -25,14 +25,22 @@ in {
           position = "0 0";
         };
         # WIP below
-        #"HDMI-A-1" = {
-        #  mode = "1920x1080@60Hz";
-        #  position = "0 0";
-        #};
+        "HDMI-A-1" = {
+          mode = "1920x1080@60Hz";
+          position = "3440 0";
+        };
         "eDP-1" = {
           mode = "1920x1200@60Hz";
         };
       };
+
+      workspaceOutputAssign = [
+        { workspace = "1"; output = "DP-1"; }
+        { workspace = "2"; output = "DP-1"; }
+        { workspace = "3"; output = "DP-1"; }
+        { workspace = "4"; output = "DP-1"; }
+        { workspace = "5"; output = "HDMI-A-1"; }
+      ];
 
       window = {
         border = 0;
