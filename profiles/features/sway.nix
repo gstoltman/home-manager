@@ -24,7 +24,6 @@ in {
           mode = "3440x1440@144Hz";
           position = "0 0";
         };
-        # WIP below
         "HDMI-A-1" = {
           mode = "1920x1080@60Hz";
           position = "3440 0";
