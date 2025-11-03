@@ -2,8 +2,6 @@
   programs.nixvim = {
     clipboard = {
       register = "unnamedplus";
-      ### FIX option wl-clipboard does not exist
-      # providers.wl-clipboard.enable = true;
     };
 
     opts = {

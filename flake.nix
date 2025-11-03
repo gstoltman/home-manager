@@ -25,7 +25,7 @@
 		        extraSpecialArgs = { inherit inputs; };
             modules = [ 
               ./profiles/home.nix
-              nixvim.homeManagerModules.nixvim
+              nixvim.homeModules.nixvim
               stylix.homeModules.stylix
             ];
           };
