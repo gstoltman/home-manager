@@ -28,7 +28,7 @@
     fastfetch
     flameshot
     godot
-    krita
+    #krita
     networkmanagerapplet
 	obsidian
     path-of-building
