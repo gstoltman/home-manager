@@ -32,7 +32,7 @@
     krita
     networkmanagerapplet
 	obsidian
-    path-of-building
+    rusty-path-of-building
     pavucontrol
     vlc
     # Fonts
