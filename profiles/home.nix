@@ -21,13 +21,12 @@
   ];
 
   home.packages = with pkgs; [
-    aseprite
+    # aseprite
     bat
     blueman
 	btop
     discord
     fastfetch
-    flameshot
     godot
     krita
     networkmanagerapplet
