@@ -22,6 +22,7 @@
 
   home.packages = with pkgs; [
     # aseprite
+    appimage-run    
     bat
     blueman
 	btop
